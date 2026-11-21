@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Explore the Banker's algorithm with editable resource-allocation matrices."><title>Deadlock Avoidance Lab</title><link rel="stylesheet" href="./style.css"></head>
+<body>
+<header class="top"><p class="eyebrow">SYSTEMS · OPERATING SYSTEMS</p><h1>Deadlock Avoidance Lab</h1><p>Explore whether a resource-allocation state has a safe execution order.</p></header>
+<main>
+<section class="panel">
+  <div class="panel-head"><div><h2>Problem input</h2><p>Use JSON with allocation, maximum demand, and available resources.</p></div><button id="example" class="quiet">Load example</button></div>
+  <label for="problem">Resource state</label><textarea id="problem" spellcheck="false" rows="14"></textarea>
+  <button id="run" class="primary">Analyze safe sequence</button>
+  <p id="error" class="error" role="alert"></p>
+</section>
+<section class="panel result" aria-live="polite">
+  <div class="panel-head"><div><h2>Analysis</h2><p>Need = maximum − allocation. Finished processes release their allocation.</p></div><span id="status" class="pill">Not analyzed</span></div>
+  <div id="summary" class="summary">Run an analysis to see whether all processes can finish.</div>
+  <div id="sequence" class="sequence"></div>
+  <h3>Execution trace</h3><div id="trace" class="trace"></div>
+</section>
+</main>
+<footer>Local educational simulator · No process or system resource is touched</footer>
+<script type="module" src="./app.js"></script>
+</body></html>

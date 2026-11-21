@@ -1,0 +1,11 @@
+{
+  "name": "deadlock-avoidance-lab",
+  "version": "1.0.0",
+  "private": false,
+  "type": "module",
+  "description": "An interactive Banker's algorithm lab for exploring safe and unsafe resource-allocation states.",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test"
+  }
+}
